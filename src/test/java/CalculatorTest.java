@@ -8,7 +8,7 @@ public class CalculatorTest {
     @Test
     public void myCalcAddTest() {
 
-        Assert.assertEquals("Addition returned wrong result", 10,calculator.add(3, 7));
+        Assert.assertEquals("Addition returned wrong result", 10, calculator.add(3, 7));
 
     }
 
@@ -35,5 +35,11 @@ public class CalculatorTest {
         Assert.assertEquals("Division returned wrong result", 4, calculator.divide(8, 2));
 
     }
+
+    @Test(expected = ArithmeticException.class)
+    public void myCalcDivideZeroTest() {
+        calculator.divide(8, 0);
+    }
+
 }
 
