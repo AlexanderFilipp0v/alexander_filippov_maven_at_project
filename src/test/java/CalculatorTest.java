@@ -1,9 +1,16 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Objects;
+
 public class CalculatorTest {
 
     Calculator calculator = new Calculator();
+
+
+
 
     @Test
     public void myCalcAddTest() {
@@ -38,6 +45,7 @@ public class CalculatorTest {
 
     @Test(expected = ArithmeticException.class)
     public void myCalcDivideZeroTest() {
+
         calculator.divide(8, 0);
     }
 
