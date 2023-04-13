@@ -21,10 +21,36 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-java</artifactId>
+                <version>4.8.3</version>
+
+        </dependency>
+
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.2</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
+
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-server</artifactId>
+                <version>4.0.0-alpha-2</version>
+
+        </dependency>
+        <dependency>
+            <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-chrome-driver</artifactId>
+                <version>4.8.3</version>
+
+
         </dependency>
     </dependencies>
 
