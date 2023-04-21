@@ -1,0 +1,38 @@
+//a[text()='Mail.ru']
+//div[@id='ph-whiteline']//a[contains(@class, 'project_current')]
+
+//div[@data-testid='whiteline']//a[text()='Облако']
+//div[contains(@class, 'whiteline')]//a[text()='Облако']
+
+//a[@data-testid='logged-out-email']
+//div[contains(@class, 'mailbox-services')]/a[1]
+
+//button[contains(@class,"ph-login ")]
+//*[contains(@class,"ph-auth")]/button
+
+//a[contains(@class,"resplash-btn_outlined-blue")]
+//a[@data-testid="mailbox-create-link"]
+
+//a[@data-testid='weather-more']
+//a[contains(@class, 'weather__arrow')]
+
+//span[contains(@title, 'ощущается как')]
+//span[@data-testid="weather-temp"]
+
+//input[@role='combobox']
+//input[@aria-label='Запрос']
+
+//a[contains(@data-testid, "lady")]
+//a[text()='Леди']
+
+//ul[@data-testid='news-content']/li[2]
+//ul[contains(@class, 'tabs-content')]/li[2]
+
+//*[contains(@class,"ph-project ph-project__register")]
+//a[contains(text(),"Регистрация")]
+
+//button[contains(@class,"ph-login ")]
+//*[contains(@class,"ph-auth")]/button
+
+//button[@class="search-arrow__button"]
+//*[@class="search-arrow__border"]/button

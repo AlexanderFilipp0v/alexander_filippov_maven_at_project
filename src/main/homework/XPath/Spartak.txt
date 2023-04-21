@@ -1,0 +1,40 @@
+//body//a/img[@alt="логотип Спартак"]
+//body//a/img[@title="Спартак"]
+
+//a[@class='has_child']//span[text()='Информация для партнеров']
+//div[@class='content_menu']//a[@href='/partners/']/span
+
+//div[@class='content_menu']//a[text()='Импрессо']
+//div[@class='content_menu']//a[@href='/products/Impresso/']
+
+//i[@class='search fa search-btn lupa']
+//div[@class='header__search']//i
+
+//span[@class="header__eye"]//img
+//img[@src="/include/eye.svg"]
+
+//div[@class='header__lang']/a[@href='/']
+//a[text()='Ru']
+
+//a[text()='Ch']
+//a[@href='/cn/']
+
+//a[@class='download-catalog']
+//a[text()='Скачать каталог']
+
+//a[@class='flex-next']
+//li[@class='flex-nav-next']/a
+
+//ol/li[2]/a
+//ol//a[text()='2']
+
+//div[@class='top_slider_wrapp']/ul[@class='social_list']/li[2]
+//div[@class='top_slider_wrapp']//a[@href='https://vk.com/spartakby']
+
+//div[@class="top_slider_wrapp"]/ul/li[last()]/a
+//div[@class="top_slider_wrapp"]//descendant:: a[contains(@href,'https://www.youtube.com')]
+
+
+
+
+

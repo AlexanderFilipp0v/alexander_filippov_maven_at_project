@@ -11,7 +11,6 @@ public class NewClass {
         WebDriver driver = new ChromeDriver();
         driver.get("https://google.com");
         driver.findElement(By.name("q")).sendKeys("Погода Минск", Keys.ENTER);
-
         driver.findElement(By.xpath("//div[@aria-label='понедельник']")).click();
         WebElement el = driver.findElement(By.xpath("//*[contains(@aria-label, '9°Celsius понедельник 12:00')]"));
         String str = el.getText();
