@@ -46,6 +46,7 @@ public class Rating {
 
     @After
     public void afterTests() {
+
         driver.quit();
     }
 

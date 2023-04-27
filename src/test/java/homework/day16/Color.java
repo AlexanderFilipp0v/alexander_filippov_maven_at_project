@@ -44,6 +44,7 @@ public class Color {
 
     @After
     public void afterTests() {
+
         driver.quit();
     }
 }

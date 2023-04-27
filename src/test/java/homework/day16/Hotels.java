@@ -36,6 +36,7 @@ public class Hotels {
 
     @After
     public void afterTests() {
+
         driver.quit();
     }
 

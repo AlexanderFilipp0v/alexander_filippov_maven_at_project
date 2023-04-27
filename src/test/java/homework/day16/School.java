@@ -56,6 +56,7 @@ public class School {
 
     @After
     public void afterTests() {
+
         driver.quit();
     }
 

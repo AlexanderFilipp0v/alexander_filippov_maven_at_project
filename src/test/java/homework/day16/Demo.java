@@ -36,6 +36,7 @@ public class Demo {
 
     @After
     public void afterTests() {
+
         driver.quit();
     }
 
