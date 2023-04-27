@@ -12,7 +12,7 @@ public class NewClass {
         driver.get("https://google.com");
         driver.findElement(By.name("q")).sendKeys("Погода Минск", Keys.ENTER);
         driver.findElement(By.xpath("//div[@aria-label='понедельник']")).click();
-        WebElement el = driver.findElement(By.xpath("//*[contains(@aria-label, '9°Celsius понедельник 12:00')]"));
+        WebElement el = driver.findElement(By.xpath("//*[contains(@aria-label, понедельник 12:00')]"));
         String str = el.getText();
         System.out.println(str + "° в 12:00");
 
