@@ -1,0 +1,4 @@
+15:01:59,081 FATAL main L4JLogging:main:10 - Сообщение с уровнем FATAL
+15:01:59,083 ERROR main L4JLogging:main:11 - Сообщение с уровнем ERROR
+15:01:59,084  WARN main L4JLogging:main:12 - Сообщение с уровнем WARNING
+15:01:59,084  INFO main L4JLogging:main:13 - Сообщение с уровнем INFO

@@ -1,0 +1,10 @@
+мая 06, 2023 2:48:21 pm day19.DefaultLogging main SEVERE: Сообщение с уровнем SEVERE
+мая 06, 2023 2:48:21 pm day19.DefaultLogging main WARNING: Сообщение с уровнем WARNING
+мая 06, 2023 2:48:21 pm day19.DefaultLogging main INFO: Сообщение с уровнем INFO
+мая 06, 2023 2:48:21 pm day19.DefaultLogging main CONFIG: Сообщение с уровнем CONFIG
+мая 06, 2023 2:48:21 pm day19.DefaultLogging main FINE: Сообщение с уровнем FINE
+мая 06, 2023 2:50:10 pm day19.DefaultLogging main SEVERE: Сообщение с уровнем SEVERE
+мая 06, 2023 2:50:10 pm day19.DefaultLogging main WARNING: Сообщение с уровнем WARNING
+мая 06, 2023 2:50:10 pm day19.DefaultLogging main INFO: Сообщение с уровнем INFO
+мая 06, 2023 2:50:10 pm day19.DefaultLogging main CONFIG: Сообщение с уровнем CONFIG
+мая 06, 2023 2:50:10 pm day19.DefaultLogging main FINE: Сообщение с уровнем FINE
