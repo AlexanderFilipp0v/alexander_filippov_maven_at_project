@@ -1,4 +1,4 @@
-package day15;
+package classwork.day15;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
