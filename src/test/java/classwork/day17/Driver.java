@@ -1,37 +1,33 @@
-package day17;
+package classwork.day17;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.concurrent.TimeUnit;
+
+import java.time.Duration;
+
 
 public class Driver {
 
-    private static WebDriver webDriver;
+        private static WebDriver webDriver;
 
-    private static Config config;
+        public static Config config;
 
-    public static void setConfig(Config config) {
-
-        Driver.config = config;
+        public static void setConfig(Config theConfig) {
+        config = null == theConfig ? Config.valueOf(System.getProperty("CONFIG")) : theConfig;
     }
 
-
-    public static WebDriver getWebDriver() {
+        public static WebDriver getWebDriver() {
         if (webDriver == null) {
-            webDriver = DriverManager.getDriver(Config.CHROME);
-            setTimeOuts(10);
-
+            webDriver = DriverManager.getDriver(config);
+            setTimeOuts(10, 10, 10);
         }
-
         return webDriver;
     }
 
-    private static void setTimeOuts(int seconds) {
-        if (webDriver != null) {
-            webDriver.manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
-        }
+        public static void setTimeOuts(int scriptTimeout, int pageLoadTimeout, int implicitlyWait) {
+        webDriver.manage().timeouts().scriptTimeout(Duration.ofSeconds(scriptTimeout));
+        webDriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(pageLoadTimeout));
+        webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitlyWait));
     }
 
-
-}
+    }

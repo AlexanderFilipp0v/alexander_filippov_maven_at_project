@@ -1,4 +1,4 @@
-package day17;
+package classwork.day17;
 
 public enum Config {
     CHROME, FF, EDGE;
