@@ -37,7 +37,8 @@ public class DbConnect {
         }
         return prop;
     }
-    private static MysqlDataSource getDataSource (Properties prop) {
+
+    private static MysqlDataSource getDataSource(Properties prop) {
         MysqlDataSource dataSource = new MysqlDataSource();
         dataSource.setServerName(prop.getProperty("HOST"));
         dataSource.setPort(Integer.parseInt(prop.getProperty("PORT")));
@@ -46,6 +47,7 @@ public class DbConnect {
         dataSource.setDatabaseName(prop.getProperty("DBNAME"));
         return dataSource;
     }
+
     private static void execStatement(String query) {
         try (Connection connection = getDataSource(prop).getConnection();
              Statement statement = connection.createStatement();
@@ -59,6 +61,7 @@ public class DbConnect {
             e.printStackTrace();
         }
     }
+
     private static void execPreparedStatement(String query, int id) {
         try (Connection connection = getDataSource(prop).getConnection();
              PreparedStatement statement = connection.prepareStatement(query);
@@ -74,6 +77,7 @@ public class DbConnect {
             e.printStackTrace();
         }
     }
+
     private static void loadCategories() {
         String query = "SELECT * FROM Categories";
         List<Category> categories = new ArrayList<>();
@@ -83,7 +87,7 @@ public class DbConnect {
              ResultSet rs = statement.executeQuery(query)) {
 
             while (rs.next()) {
-                categories.add(new Category(rs.getInt(1),rs.getString(2),rs.getString(3)));
+                categories.add(new Category(rs.getInt(1), rs.getString(2), rs.getString(3)));
             }
 
         } catch (SQLException e) {

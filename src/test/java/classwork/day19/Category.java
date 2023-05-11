@@ -14,26 +14,32 @@ public class Category {
     }
 
     public int getCategoryID() {
+
         return categoryID;
     }
 
     public String getCategoryName() {
+
         return categoryName;
     }
 
     public String getDescription() {
+
         return description;
     }
 
     public void setCategoryID(int categoryID) {
+
         this.categoryID = categoryID;
     }
 
     public void setCategoryName(String categoryName) {
+
         this.categoryName = categoryName;
     }
 
     public void setDescription(String description) {
+
         this.description = description;
     }
 

@@ -1,6 +1,6 @@
-package driver;
+package project.driver;
 
-import day17.Config;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
