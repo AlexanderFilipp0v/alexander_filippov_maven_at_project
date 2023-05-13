@@ -1,0 +1,8 @@
+name: YAML Test suite
+parallel: classes
+threadCount: 2
+tests:
+  - name: Booking Tests
+    classes:
+      - project.tests.testng.DemoTestsNG
+      - project.tests.testng.SchoolTestNG
