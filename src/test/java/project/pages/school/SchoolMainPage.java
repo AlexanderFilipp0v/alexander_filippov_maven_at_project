@@ -14,9 +14,11 @@ public class SchoolMainPage {
 
     public void getJavaUrl() {
         driver.get("https://www.w3schools.com/java/");
+        LOGGER.trace("Open the https://www.w3schools.com/java/");
     }
 
     public WebElement findTutorial() {
+        LOGGER.trace("Find the 'Tutorial' word, locator = '//h1/span[contains(text(),'Tutorial')]'");
         return driver.findElement(By.xpath("//h1/span[contains(text(),'Tutorial')]"));
     }
 }

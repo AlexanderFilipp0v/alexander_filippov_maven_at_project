@@ -11,6 +11,7 @@ public class HotelPage {
     public static final Logger LOGGER = Logger.getLogger(HotelPage.class.getName());
 
     public int getNumberOfHotelRating() {
+        LOGGER.trace("Find the hotel rating value, locator = '//*[@data-testid='review-score-right-component']/div[1]'");
         return Integer.valueOf(driver.findElement(By.xpath("//*[@data-testid='review-score-right-component']/div[1]")).getText().replaceAll("[^0-9]", ""));
     }
 }

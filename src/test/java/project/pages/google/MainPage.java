@@ -17,9 +17,11 @@ public class MainPage {
 
     public void getUrl() {
         driver.get("https://google.com");
+        LOGGER.trace("Open the https://google.com");
     }
 
     public WebElement findSearchField() {
+        LOGGER.trace("Get the search field element, locator = '[name='q']'");
         return driver.findElement(By.cssSelector("[name='q']"));
     }
 
@@ -31,6 +33,7 @@ public class MainPage {
                 displayedResults.add(item);
             }
         }
+        LOGGER.trace("Get results list, locator = '//*[@id='rso']/div//descendant:: a[@href]/h3'");
         return displayedResults;
     }
 
@@ -41,6 +44,7 @@ public class MainPage {
                 counter++;
             }
         }
+        LOGGER.trace("Get the count of results, contains the 'Tutorial'");
         return counter;
     }
 }
