@@ -31,6 +31,7 @@ public class DemoTestsNG {
         selectPage.clickMultiSelectDropdown();
         Menu.selectGreenOfMultiSelectDropdown();
         Menu.selectAudiOfStandardMultiSelect();
+        LOGGER.debug("'selectTest' is running");
     }
     @AfterTest
     public void afterTests() {
