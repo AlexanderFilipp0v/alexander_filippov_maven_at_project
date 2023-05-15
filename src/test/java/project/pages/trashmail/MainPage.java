@@ -14,6 +14,7 @@ public class MainPage {
             Logger.getLogger(MainPage.class.getName());
     public static String emailCreation() {
         Driver.getWebDriver().get("https://trashmail.com/");
+        LOGGER.trace("Open the https://trashmail.com/");
         Driver.getWebDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
         new WebDriverWait(Driver.getWebDriver(), Duration.ofSeconds(10)).until(
                 ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='fe-mob-forward']")));
