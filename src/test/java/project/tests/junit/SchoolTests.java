@@ -33,6 +33,7 @@ public class SchoolTests {
         actionsfor.selectingPasteElement(google.findSearchField());
         Assert.assertEquals("Some links don't contain the 'Tutorial' word", google.displayedResultsCount().size(),
                 google.displayedResultsCountContainsTutorial());
+        LOGGER.debug("'tutorialTest' is running");
 
     }
     @After

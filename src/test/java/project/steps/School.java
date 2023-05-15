@@ -28,27 +28,32 @@ public class School {
     @Given("I open the \"w3schools.com\"")
     public void openW3Schools() {
         schools.getJavaUrl();
+        LOGGER.debug("'I open the \"w3schools.com\"' running");
     }
 
     @When("I copy \"Tutorial\" word")
     public void copyTutorial() {
         actions.selectingCopyElement(schools.findTutorial());
+        LOGGER.debug("'I copy \"Tutorial\" word' running");
     }
 
     @When("I open the \"google.com\"")
     public void openGoogle() {
         google.getUrl();
+        LOGGER.debug("'I open the \"google.com\"' running");
     }
 
     @When("I paste \"Tutorial\" to the search field and click the Enter")
     public void pasteTutorial() {
         actions.selectingPasteElement(google.findSearchField());
+        LOGGER.debug("'I paste \"Tutorial\" to the search field and click the Enter' running");
     }
 
     @Then("I check that all result links contain the word \"Tutorial\"")
     public void checkResults() {
         Assert.assertEquals("Some links don't contain the 'Tutorial' word", google.displayedResultsCount().size(),
                 google.displayedResultsCountContainsTutorial());
+        LOGGER.debug("'I check that all result links contain the word \"Tutorial\"' running");
     }
 
     @After(value = "@schools")

@@ -32,6 +32,7 @@ public class SchoolTestNG {
         google.getUrl();
         actionsfor.selectingPasteElement(google.findSearchField());
         Assert.assertEquals(google.displayedResultsCountContainsTutorial(), google.displayedResultsCount().size(), "Some links don't contain the 'Tutorial' word");
+        LOGGER.debug("'tutorialTest' is running");
     }
     @AfterTest
     public void afterTests() {

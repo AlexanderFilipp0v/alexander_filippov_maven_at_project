@@ -30,6 +30,7 @@ public class DemoTests {
         selectPage.clickMultiSelectDropdown();
         Menu.selectGreenOfMultiSelectDropdown();
         Menu.selectAudiOfStandardMultiSelect();
+        LOGGER.debug("'selectTest' is running");
     }
     @After
     public void afterTests() {
